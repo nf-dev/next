@@ -7,7 +7,7 @@ export enum Theme {
 
 interface ThemeContextProps {
   theme?: Theme;
-  setTheme?: () => void;
+  setTheme?: (theme: Theme) => void;
 }
 
 export const ThemeContext = createContext<ThemeContextProps>({});
