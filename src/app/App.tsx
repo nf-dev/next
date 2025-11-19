@@ -1,21 +1,25 @@
 import { Suspense } from "react";
-import { Link } from "react-router-dom";
 
 import "./styles/index.scss";
 
 import { useTheme } from "./providers/ThemeProvider/";
 import { classNames } from "shared/lib";
 import { AppRouter } from "./providers/router";
+import { Navbar } from "widgets/Navbar";
+import { Sidebar } from "widgets/Sidebar";
 
 const App = () => {
-	const { theme, toggleTheme } = useTheme();
+	const { theme } = useTheme();
 
 	return (
 		<div className={classNames("app", { hovered: true }, [theme])}>
-			<button onClick={toggleTheme}>Toggle</button>
-			<Link to={"/"}>Главная</Link>
-			<Link to={"/about"}>About</Link>
-			<AppRouter />
+			<Suspense fallback="">
+				<Navbar />
+				<div className="content-page">
+					<Sidebar />
+					<AppRouter />
+				</div>
+			</Suspense>
 		</div>
 	);
 };
