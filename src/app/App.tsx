@@ -5,6 +5,7 @@ import './styles/index.scss';
 import { classNames } from 'shared/lib';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
+import { PageLoader } from 'widgets/PageLoader';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider';
 
@@ -13,7 +14,7 @@ const App = () => {
 
     return (
         <div className={classNames('app', { hovered: true }, [theme])}>
-            <Suspense fallback="">
+            <Suspense fallback={<PageLoader />}>
                 <Navbar />
                 <div className="content-page">
                     <Sidebar />

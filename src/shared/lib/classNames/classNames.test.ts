@@ -10,37 +10,38 @@ describe('classNames', () => {
 
     test('with additional', () => {
         const expected = 'cls additional1 additional2';
-        expect(classNames('cls', {}, ['additional1', 'additional2']))
-            .toBe(expected);
+        expect(classNames('cls', {}, ['additional1', 'additional2'])).toBe(
+            expected,
+        );
     });
 
     test('with mods and additional', () => {
         const expected = 'cls mods visible additional1 additional2';
-        expect(classNames(
-            'cls',
-            { mods: true, visible: true },
-            ['additional1', 'additional2'],
-        ))
-            .toBe(expected);
+        expect(
+            classNames('cls', { mods: true, visible: true }, [
+                'additional1',
+                'additional2',
+            ]),
+        ).toBe(expected);
     });
 
     test('with mods false', () => {
         const expected = 'cls mods additional1 additional2';
-        expect(classNames(
-            'cls',
-            { mods: true, visible: false },
-            ['additional1', 'additional2'],
-        ))
-            .toBe(expected);
+        expect(
+            classNames('cls', { mods: true, visible: false }, [
+                'additional1',
+                'additional2',
+            ]),
+        ).toBe(expected);
     });
 
     test('with mods undefined', () => {
         const expected = 'cls mods additional1 additional2';
-        expect(classNames(
-            'cls',
-            { mods: true, visible: undefined },
-            ['additional1', 'additional2'],
-        ))
-            .toBe(expected);
+        expect(
+            classNames('cls', { mods: true, visible: undefined }, [
+                'additional1',
+                'additional2',
+            ]),
+        ).toBe(expected);
     });
 });
