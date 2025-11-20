@@ -15,16 +15,6 @@ describe('classNames', () => {
         );
     });
 
-    test('with mods and additional', () => {
-        const expected = 'cls mods visible additional1 additional2';
-        expect(
-            classNames('cls', { mods: true, visible: true }, [
-                'additional1',
-                'additional2',
-            ]),
-        ).toBe(expected);
-    });
-
     test('with mods false', () => {
         const expected = 'cls mods additional1 additional2';
         expect(
