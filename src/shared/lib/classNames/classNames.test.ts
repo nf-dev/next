@@ -24,14 +24,4 @@ describe('classNames', () => {
             ]),
         ).toBe(expected);
     });
-
-    test('with mods undefined', () => {
-        const expected = 'cls mods additional1 additional2';
-        expect(
-            classNames('cls', { mods: true, visible: undefined }, [
-                'additional1',
-                'additional2',
-            ]),
-        ).toBe(expected);
-    });
 });

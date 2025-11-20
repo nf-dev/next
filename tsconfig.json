@@ -9,7 +9,9 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "*": ["./src/*"]
+            "*": [
+                "./src/*"
+            ]
         },
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true
@@ -18,5 +20,9 @@
         "compilerOptions": {
             "module": "commonjs"
         }
-    }
+    },
+    "include": [
+        "src/**/*",
+        "./config/jest/setupTests.ts"
+    ],
 }
