@@ -1,5 +1,17 @@
 {
-    "Язык": "English",
+    "Тестовый пример": "Test example",
     "Перевод": "Translate",
-    "Страница не найдена": "Page not found"
+    "Главная страница": "Main page",
+    "Язык": "English",
+    "Короткий язык": "En",
+    "новый перевод": "новый перевод",
+    "Страница не найдена": "Page not found",
+    "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+    "Обновить страницу": "Reload page",
+    "throw error": "throw error",
+    "Главная": "Main",
+    "О сайте": "About us",
+    "Войти": "Login",
+    "Введите username": "Enter your username",
+    "Введите пароль": "Enter your password"
 }

@@ -1,11 +1,10 @@
 import webpack from 'webpack';
-
+import path from 'path';
+import { BuildOptions } from './types/config';
 import { buildPlugins } from './buildPlugins';
 import { buildLoaders } from './buildLoaders';
 import { buildResolvers } from './buildResolvers';
 import { buildDevServer } from './buildDevServer';
-
-import { BuildOptions } from './types/config';
 
 export function buildWebpackConfig(
     options: BuildOptions,

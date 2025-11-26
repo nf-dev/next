@@ -1,9 +1,3 @@
-# Папки сборки и зависимости
 /build
-node_modules/
-
-# IDE
-.idea/
-
-# Локальные рабочие области VS Code
-*.code-workspace
+node_modules
+.idea
