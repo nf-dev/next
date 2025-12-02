@@ -19,6 +19,13 @@ Primary.args = {
     children: 'Text',
 };
 
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: 'Text',
+    disabled: true,
+    theme: ButtonTheme.OUTLINE,
+};
+
 export const Clear = Template.bind({});
 Clear.args = {
     children: 'Text',
