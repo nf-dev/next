@@ -1,7 +1,4 @@
-import { createSelector } from '@reduxjs/toolkit';
-import { getLoginState } from '../getLoginState/getLoginState';
+import { StateSchema } from 'app/providers/StoreProvider';
 
-export const getLoginPassword = createSelector(
-    getLoginState,
-    (counter) => counter.password,
-);
+export const getLoginPassword = (state: StateSchema) =>
+    state?.loginForm?.password || '';
