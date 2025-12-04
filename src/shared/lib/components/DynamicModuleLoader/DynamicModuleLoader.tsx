@@ -6,11 +6,11 @@ import {
 import { ReactNode, useEffect } from 'react';
 import { useDispatch, useStore } from 'react-redux';
 
-export type ReducerList = Partial<Record<StateSchemaKey, Reducer>>;
+export type ReducersList = Partial<Record<StateSchemaKey, Reducer>>;
 
 interface DynamicModuleLoaderProps {
     children: ReactNode;
-    reducers: ReducerList;
+    reducers: ReducersList;
     removeAfterUnmount?: boolean;
 }
 
