@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import {
     ReactNode,
     MouseEvent,
@@ -29,7 +29,7 @@ export const Modal = ({
 }: ModalProps) => {
     const [isClosing, setIsClosing] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
-    const timerRef = useRef<ReturnType<typeof setTimeout>>();
+    const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     useEffect(() => {
         if (isOpen) {
@@ -60,7 +60,7 @@ export const Modal = ({
         }
 
         return () => {
-            clearTimeout(timerRef.current);
+            if (timerRef.current) clearTimeout(timerRef.current);
             window.removeEventListener('keydown', onKeyDown);
         };
     }, [isOpen, onKeyDown]);
@@ -69,7 +69,7 @@ export const Modal = ({
         e.stopPropagation();
     };
 
-    const mods: Record<string, boolean> = {
+    const mods: Mods = {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
     };

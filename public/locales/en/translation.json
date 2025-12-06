@@ -11,11 +11,11 @@
     "throw error": "throw error",
     "Главная": "Main",
     "О сайте": "About us",
+    "Профиль": "Profile",
     "Войти": "Login",
     "Введите username": "Enter your username",
     "Введите пароль": "Enter your password",
     "Форма авторизации": "Authorization form",
     "Вы ввели неверный логин или пароль": "You have entered an incorrect login or password",
-    "Выйти": "Logout",
-    "Страница профиля": "Profile page"
+    "Выйти": "Logout"
 }

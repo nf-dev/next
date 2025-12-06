@@ -62,11 +62,13 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
+        'no-undef': 'off',
     },
     globals: {
-        __IS_DEV__: true,
-        __API__: '',
+        __IS_DEV__: 'writable',
+        __API__: 'readonly',
     },
+
     overrides: [
         {
             files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
