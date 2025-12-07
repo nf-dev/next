@@ -16,7 +16,7 @@ export default meta;
 
 type Story = StoryObj<typeof ProfilePage>;
 
-export const Normal: Story = {
+export const Light: Story = {
     args: {},
     decorators: [
         StoreDecorator({
