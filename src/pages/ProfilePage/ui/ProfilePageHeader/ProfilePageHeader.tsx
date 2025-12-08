@@ -32,7 +32,7 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
     }, [dispatch]);
 
     const onSave = useCallback(() => {
-        dispatch(updateProfileData());
+        if (__PROJECT__ !== 'storybook') dispatch(updateProfileData());
     }, [dispatch]);
 
     return (

@@ -13,5 +13,10 @@
     "Имя пользователя": "Username",
     "Ссылка на аватар": "Avatar URL",
     "Произошла ошибка при загрузке профиля": "There was an error loading your profile",
-    "Попробуйте обновить страницу": "Try refreshing the page"
+    "Попробуйте обновить страницу": "Try refreshing the page",
+    "Некорректные пользовательские данные": "Incorrect user data",
+    "Некорректный возраст": "Incorrect age",
+    "Некорректная страна": "Incorrect country",
+    "Данные отсутствуют": "No data provided",
+    "Ошибка сервера": "Server error"
 }
