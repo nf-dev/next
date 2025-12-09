@@ -26,12 +26,13 @@
     }
   ],
   "profile": {
-    "first": "gsfdgsd",
+    "first": "Nikita",
     "lastname": "sssss",
     "age": 23,
     "city": "afsadf",
     "username": "fasaaaa",
     "avatar": "ffff",
-    "country": "Armenia"
+    "country": "Armenia",
+    "currency": "EUR"
   }
 }
