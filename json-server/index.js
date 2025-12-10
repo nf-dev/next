@@ -2,6 +2,9 @@ const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
 
+const PORT = 8000;
+const HOST = '0.0.0.0';
+
 const server = jsonServer.create();
 
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
@@ -54,6 +57,6 @@ server.use((req, res, next) => {
 server.use(router);
 
 // запуск сервера
-server.listen(8000, () => {
-    console.log('server is running on 8000 port');
+server.listen(PORT, HOST, () => {
+    console.log(`JSON Server is running at http://${HOST}:${PORT}`);
 });

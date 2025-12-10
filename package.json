@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack serve --env port=3000",
+        "dev": "webpack serve --env port=3000 --host 0.0.0.0",
         "dev:server": "node ./json-server/index.js",
         "dev:start": "concurrently \"npm run dev\" \"npm run dev:server\"",
         "build:prod": "webpack --env mode=production",
